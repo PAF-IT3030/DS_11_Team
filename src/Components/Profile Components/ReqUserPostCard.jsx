@@ -11,7 +11,7 @@ const ReqUserPostCard = () => {
         {/* Post */}
         <img
           className="cursor-pointer"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxiYBIe_swsfn0db7rVgkduH693aWsqKqtCm_WB6GoRQ&s"
+          src="https://hips.hearstapps.com/hmg-prod/images/30-day-challenge-bird-dog-ab-wo0-1576613500.jpg?crop=0.565xw:1.00xh;0.218xw,0&resize=1200:*"
           alt=""
         />
 

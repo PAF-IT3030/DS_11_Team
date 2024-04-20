@@ -13,6 +13,8 @@ import {
 } from 'react-icons/ai';
 import { RiVideoFill, RiVideoLine } from 'react-icons/ri';
 import { CgProfile } from 'react-icons/cg';
+import { PiPersonSimpleRunBold } from "react-icons/pi";
+import { GiHotMeal } from "react-icons/gi";
 
 export const menu = [
   {
@@ -27,34 +29,34 @@ export const menu = [
     activeIcon: <AiOutlineSearch className="text-2xl mr-5"></AiOutlineSearch>,
   },
 
-  {
-    title: 'Explore',
-    icon: <AiOutlineCompass className="text-2xl mr-5"></AiOutlineCompass>,
-    activeIcon: <AiFillCompass className="text-2xl mr-5"></AiFillCompass>,
-  },
-
-  {
-    title: 'Reels',
-    icon: <RiVideoLine className="text-2xl mr-5"></RiVideoLine>,
-    activeIcon: <RiVideoFill className="text-2xl mr-5"></RiVideoFill>,
-  },
-
-  {
-    title: 'Messages',
-    icon: <AiOutlineMessage className="text-2xl mr-5"></AiOutlineMessage>,
-    activeIcon: <AiFillMessage className="text-2xl mr-5"></AiFillMessage>,
-  },
-
-  {
-    title: 'Notification',
-    icon: <AiOutlineHeart className="text-2xl mr-5"></AiOutlineHeart>,
-    activeIcon: <AiFillHeart className="text-2xl mr-5"></AiFillHeart>,
-  },
+  // {
+  //   title: 'Messages',
+  //   icon: <AiOutlineMessage className="text-2xl mr-5"></AiOutlineMessage>,
+  //   activeIcon: <AiFillMessage className="text-2xl mr-5"></AiFillMessage>,
+  // },
 
   {
     title: 'Create',
     icon: <AiOutlinePlusCircle className="text-2xl mr-5"></AiOutlinePlusCircle>,
     activeIcon: <AiFillPlusCircle className="text-2xl mr-5"></AiFillPlusCircle>,
+  },
+
+  {
+    title: 'Workout Plans',
+    icon: <PiPersonSimpleRunBold className="text-2xl mr-5"></PiPersonSimpleRunBold>,
+    activeIcon: <PiPersonSimpleRunBold className="text-2xl mr-5"></PiPersonSimpleRunBold>,
+  },
+
+  {
+    title: 'Meal Plans',
+    icon: <GiHotMeal className="text-2xl mr-5"></GiHotMeal>,
+    activeIcon: <GiHotMeal className="text-2xl mr-5"></GiHotMeal>,
+  },
+  
+  {
+    title: 'Notifications',
+    icon: <AiOutlineHeart className="text-2xl mr-5"></AiOutlineHeart>,
+    activeIcon: <AiFillHeart className="text-2xl mr-5"></AiFillHeart>,
   },
 
   {
