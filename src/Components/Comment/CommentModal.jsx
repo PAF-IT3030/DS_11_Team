@@ -12,7 +12,7 @@ import { RiSendPlaneLine } from 'react-icons/ri';
 const CommentModal = (onClose, isOpen, isSaved, isPostLiked, handlePostLike, handleSavePost) => {
   return (
     <div>
-        <Modal size = {'4xl'} onClose={onClose} isOpen={isOpen} isCentered>
+        <Modal size = {'4xl'} onClose={onClose} isOpen={false} isCentered>
         <ModalOverlay />
         <ModalContent>
           <ModalBody>
