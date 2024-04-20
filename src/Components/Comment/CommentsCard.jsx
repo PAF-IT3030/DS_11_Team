@@ -1,11 +1,22 @@
+import { useState } from 'react'
+import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
+
 const CommentsCard = () => {
+    const [isCommentLike, setIsCommentLiked] = useState(false);
+
+    const hancdleLikeComment = () => {
+        setIsCommentLiked(!isCommentLike)
+    }
+
   return (
     <div>
-        <div>
+        <div className = 'flex items-center justify-between py-25'>
             <div className = 'flex items-center'>
                 <div>
                 </div>
-                     <img className="h-9 w-9 rounded-full" src='https://img.freepik.com/free-photo/side-view-young-woman-shooting-with-projector_23-2149424927.jpg?w=360&t=st=1713608879~exp=1713609479~hmac=08f4db8d129cd6ceed384e2ce2c76b76ab9270d69ffcfb76de092f81d797fc0c' alt='' />
+                     <img className="h-9 w-9 rounded-full" 
+                     src='https://img.freepik.com/free-photo/side-view-young-woman-shooting-with-projector_23-2149424927.jpg?w=360&t=st=1713608879~exp=1713609479~hmac=08f4db8d129cd6ceed384e2ce2c76b76ab9270d69ffcfb76de092f81d797fc0c' 
+                     alt='' />
                 </div>
                 <div className = 'ml-3'>
                     <p>
@@ -17,14 +28,22 @@ const CommentsCard = () => {
                         </span>
                     </p>
                     <div className = 'flex items-center space-x-3 text-xs opacity-60 pt-2'>
-                        <span>10 min ago</span>
-                        <span>14 likes</span>
+                        <span>
+                            10 min ago
+                        </span>
+                        <span>
+                            14 likes
+                        </span>
                     </div>
                 </div>
+{isCommentLike ? (
+    <AiFillHeart onClick = {hancdleLikeComment} className = 'text-xs hover:opacity-50 cursor-pointer text-red-600'/>
+):(
+    <AiOutlineHeart onClick = {hancdleLikeComment} className = 'text-xs hover:opacity-50 cursor-pointer'/>
+)}
             </div>
         </div>
-    </div>
-  )
-}
+  );
+};
 
 export default CommentsCard

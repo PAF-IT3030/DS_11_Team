@@ -1,5 +1,6 @@
 import './SearchComponents.css'
 import SearchUserCard from './SearchUserCard'
+
 const SearchComponets=() => {
     return(
     <div className = 'searchContainer'>
