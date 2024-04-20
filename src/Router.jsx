@@ -32,7 +32,8 @@ const Router = () => {
         {/* Content area */}
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/signin" element={<SignIn/>} /> {/* Add the sign-in route */}
+          <Route path="/signin" element={<SignIn />} />{' '}
+          {/* Add the sign-in route */}
           <Route path="/signup" element={<Signup />} />
           <Route path="/username" element={<Profile />} />
           <Route path="/story" element={<Story />} />

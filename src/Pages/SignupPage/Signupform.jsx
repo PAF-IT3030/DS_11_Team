@@ -12,11 +12,11 @@ function Signupform() {
                     ></Field>
                     <Field 
                         name="fullname" 
-                        placeholder="Full Name"  
-                        className="border-[1px] rounded my-[5px] p-[10px] outline-none" 
+                        placeholder="Full Name" 
+                        className="border-[1px] rounded my-[5px] p-[10px] outline-none"
                     ></Field>
                     <Field 
-                        name="username"  
+                        name="username" 
                         placeholder="Username" 
                         className="border-[1px] rounded my-[5px] p-[10px] outline-none"
                     ></Field>
