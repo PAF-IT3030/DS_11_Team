@@ -9,7 +9,7 @@ import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
 import { FaRegComment } from 'react-icons/fa';
 import { RiSendPlaneLine } from 'react-icons/ri';
 
-const CommentModal = (onClose, isOpen) => {
+const CommentModal = (onClose, isOpen, isSaved, isPostLiked, handlePostLike, handleSavePost) => {
   return (
     <div>
         <Modal size = {'4xl'} onClose={onClose} isOpen={isOpen} isCentered>
