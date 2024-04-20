@@ -3,9 +3,7 @@ import {
   Button,
   Modal,
   ModalBody,
-  ModalCloseButton,
   ModalContent,
-  ModalHeader,
   ModalOverlay,
 } from '@chakra-ui/react';
 import { FaPhotoVideo } from 'react-icons/fa';
