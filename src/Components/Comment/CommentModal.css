@@ -1,11 +1,11 @@
-.comment{
-    max-height: 40vh;
-    overflow-y : scroll;
+.comment {
+  max-height: 40vh;
+  overflow-y: scroll;
 }
 
 .commentInput {
-    border: none;
-    outline: none;
-    padding: 5px;
-    width: 100%;
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 100%;
 }

@@ -1,7 +1,7 @@
-import React from "react";
-import StoryCircle from "../../Components/Story/StoryCircle";
-import HomeRight from "../../Components/HomeRight/HomeRight";
-import PostCard from "../../Components/Post/PostCard";
+import React from 'react';
+import StoryCircle from '../../Components/Story/StoryCircle';
+import HomeRight from '../../Components/HomeRight/HomeRight';
+import PostCard from '../../Components/Post/PostCard';
 // import CreatePostModal from "../../Components/Post/CreatePostModal";
 
 const Homepage = () => {
@@ -22,13 +22,15 @@ const Homepage = () => {
           {/* Post section */}
           <div className="space-y-10 w-full mt-10">
             {/* Render post cards */}
-            {[1,1,1].map((item, index)=><PostCard key={index}/>)}
+            {[1, 1, 1].map((item, index) => (
+              <PostCard key={index} />
+            ))}
           </div>
         </div>
         {/* Right section */}
         <div className="w-[35%]">
           {/* Render home right component */}
-          <HomeRight/>
+          <HomeRight />
         </div>
       </div>
     </div>
