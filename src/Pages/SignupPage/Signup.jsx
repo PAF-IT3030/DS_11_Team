@@ -5,7 +5,7 @@ import applestore from "../../assets/images/applestore.png";
 import googleplay from "../../assets/images/googleplay.png";
 import { Link } from "react-router-dom";
 
-
+// sign up main page
 function signup() {
     return (
         <div className="border-[1px] border-[black] flex justify-center flex-col items-center">
