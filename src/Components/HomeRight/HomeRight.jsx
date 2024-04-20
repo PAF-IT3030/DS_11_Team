@@ -1,4 +1,3 @@
-import React from 'react'
 import SuggetionCard from './SuggetionCard';
 
 const HomeRight = () => {

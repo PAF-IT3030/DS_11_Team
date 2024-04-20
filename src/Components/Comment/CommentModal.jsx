@@ -24,7 +24,7 @@ const CommentModal = ({onClose, isOpen, isSaved, isPostLiked, handlePostLike, ha
                   alt='' />
               </div>
 
-              <div className = 'w-[55%] pl-10'>
+              <div className = 'w-[55%] pl-10 relative'>
                 <div className = 'flex justify-between items-center py-5'>
                   <div className = 'flex items-center'>
 
@@ -45,9 +45,10 @@ const CommentModal = ({onClose, isOpen, isSaved, isPostLiked, handlePostLike, ha
 
               <hr />
               <div className = 'comment'>
-                  {[1,1,1,1].map((item, index) => <CommentsCard key={index}/>)}
+                  {[1,1,,1,1,1,1].map((item, index) => <CommentsCard key={index}/>)}
               </div>
 
+              <div className = 'absolute bottom-0 w-[90%]'>
               <div className='flex justify-between items-center w-full py-4 px-5'>
                 <div className='flex items-center space-x-2'>
                     {isPostLiked? (
@@ -90,14 +91,15 @@ const CommentModal = ({onClose, isOpen, isSaved, isPostLiked, handlePostLike, ha
                 </p>
                 </div>
 
-                <div className='border border-t w-full'>
-                <div className='flex w-full items-center px-5'>
+                <div className='border border-t'>
+                <div className='flex items-center px-5'>
                     <BsEmojiSmile/>
                     <input className='commentInput' type='text' placeholder='Add a comment...'/>
                 </div>
             </div>
 
             </div>
+              </div>
 
               </div>
             </div>
