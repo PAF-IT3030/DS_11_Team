@@ -7,11 +7,15 @@ const ReqUserPostCard = () => {
   return (
     <div className="p-2">
       <div className="post w-60 h-60">
+
+        {/* Post */}
         <img
           className="cursor-pointer"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxiYBIe_swsfn0db7rVgkduH693aWsqKqtCm_WB6GoRQ&s"
           alt=""
         />
+
+        {/* Likes & Comments */}
         <div className="overlay">
           <div className="overlay-text flex justify-between">
             <div>

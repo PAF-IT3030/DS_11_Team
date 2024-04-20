@@ -3,6 +3,8 @@ import { TbCircleDashed } from 'react-icons/tb';
 export const ProfileUserDetails = () => {
   return (
     <div className="py-10 w-full">
+
+      {/* General info. of the user */}
       <div className="flex items-center">
         <div className="w-[15%]">
           <img
@@ -31,6 +33,8 @@ export const ProfileUserDetails = () => {
               <span>following</span>
             </div>
           </div>
+
+          {/* User Bio */}
           <div>
             <p className="font-semibold">Anne Smith</p>
             <p className="font-thin text-sm">

@@ -34,6 +34,7 @@ const Sidebar = () => {
         className={`flex flex-col justify-between h-full ${activeTab === 'Search' ? 'px-2' : 'px-10'}`}
       >
         {
+          // Logo
           <div>
             {activeTab !== 'Search' && (
               <div className="pt-10">
@@ -45,6 +46,7 @@ const Sidebar = () => {
               </div>
             )}
 
+            {/* Icons & titles of tabs */}
             <div className="mt-10 flex flex-col">
               {menu.map((item, index) => (
                 <div
