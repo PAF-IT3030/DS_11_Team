@@ -1,13 +1,9 @@
 import {
-  AiFillCompass,
   AiFillHeart,
   AiFillHome,
-  AiFillMessage,
   AiFillPlusCircle,
-  AiOutlineCompass,
   AiOutlineHeart,
   AiOutlineHome,
-  AiOutlineMessage,
   AiOutlinePlusCircle,
   AiOutlineSearch,
 } from 'react-icons/ai';

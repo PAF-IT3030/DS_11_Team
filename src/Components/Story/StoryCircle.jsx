@@ -19,7 +19,7 @@ const StoryCircle = () => {
       {/* User profile picture */}
       <img
         className="w-16 h-16 rounded-full"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxiYBIe_swsfn0db7rVgkduH693aWsqKqtCm_WB6GoRQ&s"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDrLWLDIxOJ9VRX56q-IIrwUO4XUvUnn2ofg&s"
         alt=""
       />
       {/* Username */}

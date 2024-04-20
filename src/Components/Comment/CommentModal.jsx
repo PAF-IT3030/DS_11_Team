@@ -11,6 +11,7 @@ import { FaRegComment } from 'react-icons/fa';
 import { RiSendPlaneLine } from 'react-icons/ri';
 import './CommentModal.css';
 
+// Comment card component for each comment
 const CommentModal = ({
   onClose,
   isOpen,
@@ -29,7 +30,7 @@ const CommentModal = ({
               <div className="w-[45%] flex flex-col justify-center">
                 <img
                   className="max-h-full w-full"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxiYBIe_swsfn0db7rVgkduH693aWsqKqtCm_WB6GoRQ&s"
+                  src="https://blog.fitbit.com/wp-content/uploads/2018/01/2017-12-06_Weightloss_DAY01_Blog_730x485.jpg"
                   alt=""
                 />
               </div>
@@ -53,7 +54,7 @@ const CommentModal = ({
 
                 <hr />
                 <div className="comment">
-                  {[1, 1, , 1, 1, 1, 1].map((item, index) => (
+                  {[1, 1, 1, 1, 1, 1].map((item, index) => (
                     <CommentsCard key={index} />
                   ))}
                 </div>

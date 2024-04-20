@@ -1,3 +1,5 @@
+//SearchUserCard component for search user card
+
 const SearchUserCard = () => {
   return (
     <div className="py-2 cursor-pointer">

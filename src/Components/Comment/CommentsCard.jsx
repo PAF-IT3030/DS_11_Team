@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
 
+//creating comments for each post
 const CommentsCard = () => {
   const [isCommentLike, setIsCommentLiked] = useState(false);
 

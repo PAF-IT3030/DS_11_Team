@@ -1,6 +1,7 @@
 import './SearchComponents.css';
 import SearchUserCard from './SearchUserCard';
 
+//Search results for each search
 const SearchComponets = () => {
   return (
     <div className="searchContainer">

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { AiOutlineTable, AiOutlineUser } from 'react-icons/ai';
+import { AiOutlineTable } from 'react-icons/ai';
 import { BiBookmark } from 'react-icons/bi';
-import { RiVideoAddLine } from 'react-icons/ri';
 import ReqUserPostCard from './ReqUserPostCard';
+import { PiPersonSimpleRun } from 'react-icons/pi';
+import { IoFastFoodOutline } from 'react-icons/io5';
 
 const ReqUserPostPart = () => {
   const [activeTab, setActiveTab] = useState();
@@ -13,16 +14,16 @@ const ReqUserPostPart = () => {
       activeTab: '',
     },
     {
-      tab: 'Reels',
-      icon: <RiVideoAddLine></RiVideoAddLine>,
+      tab: 'Meal Plans',
+      icon: <IoFastFoodOutline></IoFastFoodOutline>,
+    },
+    {
+      tab: 'Workout Plans',
+      icon: <PiPersonSimpleRun></PiPersonSimpleRun>,
     },
     {
       tab: 'Saved',
       icon: <BiBookmark></BiBookmark>,
-    },
-    {
-      tab: 'Tagged',
-      icon: <AiOutlineUser></AiOutlineUser>,
     },
   ];
   return (

@@ -70,7 +70,7 @@ const PostCard = () => {
         <div className="w-full">
           <img
             className="w-full"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxiYBIe_swsfn0db7rVgkduH693aWsqKqtCm_WB6GoRQ&s"
+            src="https://blog.fitbit.com/wp-content/uploads/2018/01/2017-12-06_Weightloss_DAY01_Blog_730x485.jpg"
             alt=""
           />
         </div>
