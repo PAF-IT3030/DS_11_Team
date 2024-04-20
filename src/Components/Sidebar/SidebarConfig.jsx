@@ -11,10 +11,10 @@ import {
   AiOutlinePlusCircle,
   AiOutlineSearch,
 } from 'react-icons/ai';
-import { RiVideoFill, RiVideoLine } from 'react-icons/ri';
+import { IoFastFoodOutline,IoFastFood } from "react-icons/io5";
 import { CgProfile } from 'react-icons/cg';
-import { PiPersonSimpleRunBold } from "react-icons/pi";
-import { GiHotMeal } from "react-icons/gi";
+import { PiPersonSimpleRun,PiPersonSimpleRunBold } from "react-icons/pi";
+
 
 export const menu = [
   {
@@ -43,14 +43,14 @@ export const menu = [
 
   {
     title: 'Workout Plans',
-    icon: <PiPersonSimpleRunBold className="text-2xl mr-5"></PiPersonSimpleRunBold>,
+    icon: <PiPersonSimpleRun className="text-2xl mr-5"></PiPersonSimpleRun>,
     activeIcon: <PiPersonSimpleRunBold className="text-2xl mr-5"></PiPersonSimpleRunBold>,
   },
 
   {
     title: 'Meal Plans',
-    icon: <GiHotMeal className="text-2xl mr-5"></GiHotMeal>,
-    activeIcon: <GiHotMeal className="text-2xl mr-5"></GiHotMeal>,
+    icon: <IoFastFoodOutline className="text-2xl mr-5"></IoFastFoodOutline>,
+    activeIcon: <IoFastFood className="text-2xl mr-5"></IoFastFood>,
   },
   
   {
