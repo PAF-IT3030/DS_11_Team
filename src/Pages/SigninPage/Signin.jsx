@@ -1,8 +1,7 @@
 import React from "react";
-import img1 from "./images/img1.png";
-import inst from "./images/inst.png";
-import applestore from "./images/applestore.png";
-import googleplay from "./images/googleplay.png";
+import img1 from "../../assets/images/img1.png";
+import applestore from "../../assets/images/applestore.png";
+import googleplay from "../../assets/images/googleplay.png";
 import Signinform from "./Signinform";
 import { Link } from "react-router-dom";
 import Footer from "../../Components/Footer/Footer";
@@ -17,7 +16,7 @@ function SignIn() {
             <div className="w-[50%]">
                 <div className="flex justify-center h-[65%] border-[1px] border-[#DBDBDB] flex-col items-center mb-[10px] ">
                     <div className="h-[30%] flex justify-center items-center ">
-                        <img className="w-[70%] h-[70%]" src={inst}></img>    
+                        <img className="w-[70%] h-[70%]" src="https://www.shopelitepromo.com/content/v/vspfiles/assets/images/flexfit-logo.png"></img>    
                 </div> 
                 <div className="h-[40%] w-[100%] flex justify-center"> <Signinform></Signinform> </div>
                 <div className="h-[30%] flex flex-col w-[100%] items-center justify-stretch">
