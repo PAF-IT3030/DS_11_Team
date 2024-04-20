@@ -10,10 +10,9 @@ const CommentsCard = () => {
 
   return (
     <div>
-        <div className = 'flex items-center justify-between py-25'>
+        <div className = 'flex items-center justify-between py-5'>
             <div className = 'flex items-center'>
                 <div>
-                </div>
                      <img className="h-9 w-9 rounded-full" 
                      src='https://img.freepik.com/free-photo/side-view-young-woman-shooting-with-projector_23-2149424927.jpg?w=360&t=st=1713608879~exp=1713609479~hmac=08f4db8d129cd6ceed384e2ce2c76b76ab9270d69ffcfb76de092f81d797fc0c' 
                      alt='' />
@@ -41,6 +40,7 @@ const CommentsCard = () => {
 ):(
     <AiOutlineHeart onClick = {hancdleLikeComment} className = 'text-xs hover:opacity-50 cursor-pointer'/>
 )}
+            </div>
             </div>
         </div>
   );
