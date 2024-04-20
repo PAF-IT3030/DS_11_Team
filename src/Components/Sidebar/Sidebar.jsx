@@ -6,7 +6,6 @@ import { useDisclosure } from "@chakra-ui/react";
 import CreatePostModal from "../../Components/Post/CreatePostModal";
 import SearchComponets from "../SearchComponent/SearchComponents";
 
-
 const Sidebar = () => {
   const [activeTab, setActiveTab] = useState("");
   const navigate = useNavigate();
@@ -14,22 +13,24 @@ const Sidebar = () => {
   const [isSearchVisible, setIsSearchvisible] = useState(false);
 
   const handleTabClick = (title) => {
-  setActiveTab(title);
-  if (title === "Profile") {
-  navigate("/username");
-  } else if (title === "Home") { 
-    navigate("/");
-  } else if(title === "Create"){
-    onOpen()
-  } if(title == "Search") {
-  setIsSearchvisible(true)
-  }
-  else setIsSearchvisible(false)
-  }
+    setActiveTab(title);
+    if (title === "Profile") {
+      navigate("/username");
+    } else if (title === "Home") {
+      navigate("/");
+    } else if (title === "Create") {
+      onOpen();
+    } 
+    if (title === "Search") {
+      setIsSearchvisible(true);
+    } else {
+      setIsSearchvisible(false);
+    }
+  };
 
   return (
     <div className="pl-8 sticky top-0 h-[100vh] flex">
-      <div className={`flex flex-col justify-between h-full ${activeTab === "Search"?'px-2':'px-10'}}`}>
+      <div className={`flex flex-col justify-between h-full ${activeTab === "Search" ? 'px-2' : 'px-10'}`}>
         {<div>
           {activeTab !== 'Search' && <div className="pt-10">
             <img
@@ -38,6 +39,7 @@ const Sidebar = () => {
               alt=""
             />
           </div>}
+
           <div className="mt-10 flex flex-col">
             {menu.map((item, index) => (
               <div
@@ -51,6 +53,7 @@ const Sidebar = () => {
             ))}
           </div>
         </div>}
+        
         <div className="flex items-center cursor-pointer pb-10">
           <IoReorderThreeOutline className="text-2xl"/>
           {activeTab !== 'Search' && <p className="ml-5">More</p>}
