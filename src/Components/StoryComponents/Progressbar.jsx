@@ -3,39 +3,44 @@ import "./Progressbar.css";
 //import { progress } from 'framer-motion';
 
 const Progressbar = ({index, activeIndex, duration}) => {
-    const [progress,setProgress]=useState(0);
+    // State to track the progress of the progress bar
+    const [progress, setProgress] = useState(0);
 
-    useEffect(()=>{
-        const interval=setInterval(()=>{
-            setProgress((preProgress)=>{
-                if(preProgress<100){
-                    return preProgress+1;
+    // Effect to update the progress bar
+    useEffect(() => {
+        // Interval to update progress every 10ms based on the duration
+        const interval = setInterval(() => {
+            setProgress((preProgress) => {
+                // Increment progress until it reaches 100
+                if (preProgress < 100) {
+                    return preProgress + 1;
                 }
-                clearInterval(interval)
+                // Clear interval when progress reaches 100
+                clearInterval(interval);
                 return preProgress;
-            })
-        },duration/100);
-        return ()=>{
-            clearInterval(interval)
-        }
-    },[duration,activeIndex])
+            });
+        }, duration / 100); // Dividing duration by 100 to update progress every 10ms
+        // Cleanup function to clear interval
+        return () => {
+            clearInterval(interval);
+        };
+    }, [duration, activeIndex]); // Dependencies: duration and activeIndex
 
-    useEffect(()=>{
+    // Effect to reset progress when activeIndex changes
+    useEffect(() => {
         setProgress(0);
-    },[activeIndex])
+    }, [activeIndex]); // Dependency: activeIndex
 
-    const isActive = index===activeIndex;
+    // Check if the progress bar is active
+    const isActive = index === activeIndex;
 
-
-
-  return (
-    <div className={`progress-bar-container ${isActive?"active":""}`}>
-        <div className={` ${isActive?"progress-bar": ""}`} 
-        style={{ width:`${progress}%` }}>
-
+    // Render the progress bar
+    return (
+        <div className={`progress-bar-container ${isActive ? "active" : ""}`}>
+            <div className={` ${isActive ? "progress-bar" : ""}`} style={{ width:`${progress}%` }}>
+            </div>
         </div>
-    </div>
-  );
+    );
 };
 
 export default Progressbar;
