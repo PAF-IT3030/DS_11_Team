@@ -5,13 +5,17 @@ import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import Profile from './pages/ProfilePage/Profile';
 import Story from './pages/Story/Story';
 import Router from './Router';
+import { QueryClient, QueryClientProvider } from 'react-query';
 
 function App() {
+  const queryClient = new QueryClient();
   return (
     <div className="App flex flex-col h-full">
-      <BrowserRouter>
-        <Router />
-      </BrowserRouter>
+      < QueryClientProvider client={queryClient}>
+        <BrowserRouter>
+          <Router />
+        </BrowserRouter>
+      </QueryClientProvider>
     </div>
   );
 }
