@@ -31,7 +31,7 @@ const Router = () => {
       <div className="flex-grow overflow-auto p-10">
         {/* Content area */}
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route path="/home" element={<Homepage />} />
           <Route path="/signin" element={<SignIn />} />{' '}
           {/* Add the sign-in route */}
           <Route path="/signup" element={<Signup />} />

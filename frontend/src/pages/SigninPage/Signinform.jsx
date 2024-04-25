@@ -2,25 +2,27 @@ import React from 'react';
 import { Formik, Form, Field } from 'formik';
 import { useLogin } from '../../hooks/authHooks';
 
+
 function Signinform() {
 
   const {
-    mutate: loginData
+    mutate: loginData,
   } = useLogin();
 
+
   const handleSubmit = (values) => {
-    loginData(values);
+    loginData(values)
   }
 
   return (
-    <Formik initialValues={{ username: '', password: '' }} onSubmit={handleSubmit}>
+    <Formik initialValues={{ usernameOrEmail: '', password: '' }} onSubmit={handleSubmit}>
       {({ handleChange, values }) => (
         <Form className="flex flex-col w-[70%] gap-[1em] ">
           <Field
             className="h-[30%] border-[1px] rounded p-[10px] outline-none"
-            name="username"
+            name="usernameOrEmail"
             placeholder="Username"
-            value={values.username}
+            value={values.usernameOrEmail}
             onChange={handleChange}
             required
           />
