@@ -7,7 +7,6 @@ const ReqUserPostCard = () => {
   return (
     <div className="p-2">
       <div className="post w-60 h-60">
-
         {/* Post */}
         <img
           className="cursor-pointer"

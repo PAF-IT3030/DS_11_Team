@@ -1,6 +1,6 @@
 import React from 'react';
-import { ProfileUserDetails } from '../../Components/Profile Components/ProfileUserDetails';
-import ReqUserPostPart from '../../Components/Profile Components/ReqUserPostPart';
+import { ProfileUserDetails } from '../../components/Profile Components/ProfileUserDetails';
+import ReqUserPostPart from '../../components/Profile Components/ReqUserPostPart';
 
 const Profile = () => {
   return (

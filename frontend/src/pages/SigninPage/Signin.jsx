@@ -13,9 +13,7 @@ import Signinform from './Signinform';
 import { Link } from 'react-router-dom';
 
 // path of the footer file
-import Footer from '../../Components/Footer/Footer';
-
-
+import Footer from '../../components/Footer/Footer';
 
 // function creation section
 
@@ -24,16 +22,16 @@ function SignIn() {
     <div className="flex flex-col items-center ">
       <div className="flex h-[35em] w-[800px] my-[8em]">
         <div className="h-[100%] w-[50%]">
-          <img className="h-[100%] w-[100%]" src={img1}></img>    {/* call the image */}
+          <img className="h-[100%] w-[100%]" src={img1}></img>{' '}
+          {/* call the image */}
         </div>
         <div className="w-[50%]">
           <div className="flex justify-center h-[65%] border-[1px] border-[#DBDBDB] flex-col items-center mb-[10px] ">
             <div className="h-[30%] flex justify-center items-center ">
-
               {/* call the logo */}
               <img
                 className="w-[70%] h-[70%]"
-                src="https://www.shopelitepromo.com/content/v/vspfiles/assets/images/flexfit-logo.png"    
+                src="https://www.shopelitepromo.com/content/v/vspfiles/assets/images/flexfit-logo.png"
               ></img>
             </div>
 
@@ -68,7 +66,6 @@ function SignIn() {
               <div className="w-[70%] basis-1/3 text-[#385185] text-[15px] flex justify-center items-center">
                 Forgotten Your Password
               </div>
-
             </div>
           </div>
 
@@ -76,17 +73,14 @@ function SignIn() {
           <div className="h-[10%] border-[1px] border-[#DBDBDB] flex justify-center items-center">
             <p className="">
               Don't have an Account?
-
               {/* link to the signup page */}
               <span className="text-[#4CB5F9]">
                 <Link to="/signup"> Sign up </Link>
               </span>
-
             </p>
           </div>
 
           <div className="h-[20%]">
-
             {/* create download option of the app */}
             <div className="h-[50%] flex justify-center items-center">
               <p> Get the App </p>
@@ -102,7 +96,6 @@ function SignIn() {
               <div className="h-[100%]">
                 <img className="h-[100%] w-[100%]" src={googleplay}></img>
               </div>
-
             </div>
           </div>
         </div>
@@ -110,9 +103,7 @@ function SignIn() {
 
       {/* call the footer part */}
       <Footer className="border-[1px] border-[green]"></Footer>
-
     </div>
-    
   );
 }
 

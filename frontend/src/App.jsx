@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Homepage from './Pages/HomePage/Homepage';
-import Sidebar from './Components/Sidebar/Sidebar';
-import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
-import Profile from './Pages/ProfilePage/Profile';
-import Story from './Pages/Story/Story';
+import Homepage from './pages/HomePage/Homepage';
+import Sidebar from './components/Sidebar/Sidebar';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
+import Profile from './pages/ProfilePage/Profile';
+import Story from './pages/Story/Story';
 import Router from './Router';
 
 function App() {

@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Homepage from './Pages/HomePage/Homepage.jsx';
-import NotFoundPage from './Pages/NotFoundPage/NotFoundPage.jsx';
+import Homepage from './pages/HomePage/Homepage.jsx';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage.jsx';
 import { ChakraProvider } from '@chakra-ui/react';
 
 // const router = createBrowserRouter([

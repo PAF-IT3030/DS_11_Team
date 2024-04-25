@@ -3,7 +3,7 @@ import { IoReorderThreeOutline } from 'react-icons/io5';
 import { menu } from './SidebarConfig';
 import { useNavigate } from 'react-router-dom';
 import { useDisclosure } from '@chakra-ui/react';
-import CreatePostModal from '../../Components/Post/CreatePostModal';
+import CreatePostModal from '../Post/CreatePostModal';
 import SearchComponets from '../SearchComponent/SearchComponents';
 
 const Sidebar = () => {

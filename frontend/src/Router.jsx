@@ -1,12 +1,12 @@
 import React from 'react';
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
-import Homepage from './Pages/HomePage/Homepage';
-import Profile from './Pages/ProfilePage/Profile';
-import Story from './Pages/Story/Story';
-import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
-import Sidebar from './Components/Sidebar/Sidebar';
-import SignIn from './Pages/SigninPage/Signin';
-import Signup from './Pages/SignupPage/Signup';
+import Homepage from './pages/HomePage/Homepage';
+import Profile from './pages/ProfilePage/Profile';
+import Story from './pages/Story/Story';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
+import Sidebar from './components/Sidebar/Sidebar';
+import SignIn from './pages/SigninPage/Signin';
+import Signup from './pages/SignupPage/Signup';
 
 const Router = () => {
   const location = useLocation();

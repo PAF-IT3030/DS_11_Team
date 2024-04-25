@@ -4,14 +4,12 @@ import {
   AiFillPlusCircle,
   AiOutlineHeart,
   AiOutlineHome,
-  AiOutlinePlusCircle,  
+  AiOutlinePlusCircle,
 } from 'react-icons/ai';
-import { IoFastFoodOutline,IoFastFood } from "react-icons/io5";
+import { IoFastFoodOutline, IoFastFood } from 'react-icons/io5';
 import { CgProfile } from 'react-icons/cg';
-import { GrSearch, GrSearchAdvanced } from "react-icons/gr";
-import { PiPersonSimpleRun,PiPersonSimpleRunFill } from "react-icons/pi";
-
-
+import { GrSearch, GrSearchAdvanced } from 'react-icons/gr';
+import { PiPersonSimpleRun, PiPersonSimpleRunFill } from 'react-icons/pi';
 
 export const menu = [
   {
@@ -41,7 +39,9 @@ export const menu = [
   {
     title: 'Workout Plans',
     icon: <PiPersonSimpleRun className="text-2xl mr-5"></PiPersonSimpleRun>,
-    activeIcon: <PiPersonSimpleRunFill className="text-2xl mr-5"></PiPersonSimpleRunFill>,
+    activeIcon: (
+      <PiPersonSimpleRunFill className="text-2xl mr-5"></PiPersonSimpleRunFill>
+    ),
   },
 
   {
@@ -49,7 +49,7 @@ export const menu = [
     icon: <IoFastFoodOutline className="text-2xl mr-5"></IoFastFoodOutline>,
     activeIcon: <IoFastFood className="text-2xl mr-5"></IoFastFood>,
   },
-  
+
   {
     title: 'Notifications',
     icon: <AiOutlineHeart className="text-2xl mr-5"></AiOutlineHeart>,

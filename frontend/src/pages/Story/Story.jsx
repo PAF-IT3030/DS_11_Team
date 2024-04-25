@@ -1,5 +1,5 @@
 import React from 'react';
-import StoryViwer from '../../Components/StoryComponents/StoryViwer';
+import StoryViwer from '../../components/StoryComponents/StoryViwer';
 
 const Story = () => {
   // Array of story objects containing image URLs

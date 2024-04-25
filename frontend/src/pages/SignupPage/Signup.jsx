@@ -2,16 +2,14 @@
 
 import React from 'react';
 
-import Footer from '../../Components/Footer/Footer';       // path of the footer file
-import Signupform from './Signupform';       // path of signupform file
+import Footer from '../../components/Footer/Footer'; // path of the footer file
+import Signupform from './Signupform'; // path of signupform file
 
 // path of the images
 import applestore from '../../assets/images/applestore.png';
 import googleplay from '../../assets/images/googleplay.png';
 
 import { Link } from 'react-router-dom';
-
-
 
 // sign up main page function section
 
@@ -22,7 +20,6 @@ function signup() {
         <div className="h-[70%] border-[1px] border-[#DBDBDB]">
           <div className="h-[45%]">
             <div className="h-[50%] w-[100%] flex justify-center items-center">
-
               {/* call the logo */}
               <img
                 className="w-[50%] h-[80%]"
@@ -51,7 +48,6 @@ function signup() {
               <div className="w-[10%] flex justify-center"> OR </div>
               <div className="border-t-[1px] w-[30%] mt-[10px]"></div>
             </div>
-
           </div>
 
           {/* call the signupform file */}
@@ -63,8 +59,7 @@ function signup() {
         {/* create option to the go signin page */}
         <div className="border-[1px] border-[#DBDBDB] my-[20px] flex justify-center">
           <p className="p-[10px]">
-            Have an account?{' '}
-            {/* link of the signinpage */}
+            Have an account? {/* link of the signinpage */}
             <span className="text-[#4CB5F9]">
               <Link to="/signin"> Log in </Link>
             </span>
@@ -89,11 +84,8 @@ function signup() {
 
       {/* call the footer file */}
       <Footer className="border-[1px] border-[green]"></Footer>
-
     </div>
-
   );
-  
 }
 
 export default signup;

@@ -1,8 +1,8 @@
 import React from 'react';
-import StoryCircle from '../../Components/Story/StoryCircle';
-import HomeRight from '../../Components/HomeRight/HomeRight';
-import PostCard from '../../Components/Post/PostCard';
-// import CreatePostModal from "../../Components/Post/CreatePostModal";
+import StoryCircle from '../../components/Story/StoryCircle';
+import HomeRight from '../../components/HomeRight/HomeRight';
+import PostCard from '../../components/Post/PostCard';
+// import CreatePostModal from "../../components/Post/CreatePostModal";
 
 const Homepage = () => {
   // Render the homepage layout
