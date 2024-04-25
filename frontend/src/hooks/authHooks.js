@@ -11,7 +11,7 @@ export const useLogin = () => {
         return response.data;
     }, {
         onSuccess: (data) => {
-            localStorage.setItem('token', data.token);
+            localStorage.setItem('token', data.accessToken);
             navigate('/home');
         },
         onError: (error) => {

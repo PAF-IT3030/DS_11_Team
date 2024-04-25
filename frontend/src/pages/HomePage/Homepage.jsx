@@ -1,11 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import StoryCircle from '../../components/Story/StoryCircle';
 import HomeRight from '../../components/HomeRight/HomeRight';
 import PostCard from '../../components/Post/PostCard';
-// import CreatePostModal from "../../components/Post/CreatePostModal";
+import { useGetAllPosts } from '../../hooks/postHooks';
+import { useLikePost } from '../../hooks/likeHooks';
 
 const Homepage = () => {
-  // Render the homepage layout
+  const [posts, setPosts] = useState([]);
+  const { isLoading, isError, data, refetch } = useGetAllPosts();
+  const { mutate: likePost } = useLikePost();
+
+  useEffect(() => {
+      if (data) {
+        setPosts(data.content);
+      }
+  }, [data]);
+
+  const handleLikePost = (postId) => {
+    likePost(postId);
+    refetch();
+  };
+
+
+
   return (
     <div>
       {/* Main content area */}
@@ -22,8 +39,19 @@ const Homepage = () => {
           {/* Post section */}
           <div className="space-y-10 w-full mt-10">
             {/* Render post cards */}
-            {[1, 1, 1].map((item, index) => (
-              <PostCard key={index} />
+            {posts && posts.map((post, index) => (
+              <PostCard
+                key={index}
+                description={post?.description}
+                imagePath={post?.imagePath}
+                createdBy={post?.createdBy}
+                creationDateTime={post?.creationDateTime}
+                // likesCount={post?.likesCount}
+                onSavePost={() => handleSavePost(post?.id)}
+                onLikePost={() => handleLikePost(post?.id)}
+                isPostLiked={post?.liked}
+                isSaved={post?.isSaved}
+              />
             ))}
           </div>
         </div>

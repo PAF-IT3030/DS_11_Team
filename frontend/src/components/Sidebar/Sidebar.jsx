@@ -17,7 +17,7 @@ const Sidebar = () => {
     if (title === 'Profile') {
       navigate('/username');
     } else if (title === 'Home') {
-      navigate('/');
+      navigate('/home');
     } else if (title === 'Create') {
       onOpen();
     }
