@@ -14,7 +14,7 @@ import com.fithub.backend.mealplan.repository.MealPlanRepository;
 import com.fithub.backend.mealplan.repository.UserRepository;
 import com.fithub.backend.mealplan.util.DefaultResponse;
 import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Service;  
 
 import java.util.ArrayList;  
 import java.util.List;
