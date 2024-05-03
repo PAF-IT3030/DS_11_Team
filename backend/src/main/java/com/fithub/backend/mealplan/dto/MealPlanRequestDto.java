@@ -16,7 +16,7 @@ public class MealPlanRequestDto {
     private String instructions;
     private String recipeName;
 
-    private Long userId;
+    private Long userId;  
 
     // private List<String> images;  
 

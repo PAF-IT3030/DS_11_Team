@@ -7,7 +7,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
+import java.util.HashMap; 
 
 @RestController
 @RequestMapping("/api/meal-plan")
