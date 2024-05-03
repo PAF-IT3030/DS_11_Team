@@ -16,13 +16,13 @@ import com.fithub.backend.mealplan.util.DefaultResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
+import java.util.ArrayList;  
 import java.util.List;
-import java.util.Optional;
+import java.util.Optional;  
 
 @Service
 @AllArgsConstructor
-public class MealPlanService {
+public class MealPlanService { 
 
     private final MealPlanRepository mealPlanRepository;
     private final UserRepository userRepository;
