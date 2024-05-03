@@ -29,9 +29,14 @@ export const menu = [
   //   icon: <AiOutlineMessage className="text-2xl mr-5"></AiOutlineMessage>,
   //   activeIcon: <AiFillMessage className="text-2xl mr-5"></AiFillMessage>,
   // },
+  {
+    title: 'Create Workout Plans',
+    icon: <AiOutlinePlusCircle className="text-2xl mr-5"></AiOutlinePlusCircle>,
+    activeIcon: <AiFillPlusCircle className="text-2xl mr-5"></AiFillPlusCircle>,
+  },
 
   {
-    title: 'Create',
+    title: 'Create Meal Plans',
     icon: <AiOutlinePlusCircle className="text-2xl mr-5"></AiOutlinePlusCircle>,
     activeIcon: <AiFillPlusCircle className="text-2xl mr-5"></AiFillPlusCircle>,
   },
