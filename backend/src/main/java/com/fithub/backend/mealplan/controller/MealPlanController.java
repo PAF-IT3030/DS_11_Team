@@ -12,7 +12,7 @@ import java.util.HashMap;
 @RestController
 @RequestMapping("/api/meal-plan")
 @AllArgsConstructor
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:3000")  
 public class MealPlanController {
 
     private final MealPlanService mealPlanService;
@@ -32,7 +32,7 @@ public class MealPlanController {
         }
 
     }
-
+  
     @GetMapping("/get")
     public ResponseEntity<DefaultResponse> getMealPlanList(@RequestParam("userId") String userID) {
         try {
