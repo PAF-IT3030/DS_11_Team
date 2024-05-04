@@ -4,10 +4,10 @@ import { ImageList, ImageListItem, ImageListItemBar, ListSubheader, IconButton,B
 import vegeterian from '../../assets/mealplans/vegeterian.jpg';
 import vegan from '../../assets/mealplans/vegan.jpg';
 import keto from '../../assets/mealplans/keto.jpg';
-import pescatarian from '../../assets/mealplans/pescatarian.jpg';
-import flexitarian from '../../assets/mealplans/Flexitarian.jpg';
+import pescatarian from '../../assets/mealplans/pescatarian.jpg'; 
+import flexitarian from '../../assets/mealplans/Flexitarian.jpg'; 
 import glutenfree from '../../assets/mealplans/glutenfree.jpg'
-import AddCircleRoundedIcon from '@mui/icons-material/AddCircleRounded';
+import AddCircleRoundedIcon from '@mui/icons-material/AddCircleRounded'; 
 
 
 const MealPlansCategory = () => {
