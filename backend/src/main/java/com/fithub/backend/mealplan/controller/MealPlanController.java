@@ -14,7 +14,6 @@ import java.util.HashMap;
 @AllArgsConstructor
 @CrossOrigin(origins = "http://localhost:3000")
 public class MealPlanController {
-
     private final MealPlanService mealPlanService;
 
     @PostMapping("/create")
