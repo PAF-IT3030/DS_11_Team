@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import { images, names } from "../../constants/data";
 import CreatePostModal from "./CreatePostModal";
+import WorkoutStatusModal from "../WorkoutStatus/WorkoutStatusModal";
 
 const CreatePost = () => {
   const [showModal, setShowModal] = useState(false);
+  const [showStatusModal, setshowStatusModal] = useState(false);
 
   const handleShowModal = () => {
     setShowModal(!showModal);
+  };
+
+  const handleShowStatusModal = () => {
+    setshowStatusModal(!showStatusModal);
   };
 
   return (
@@ -36,6 +42,15 @@ const CreatePost = () => {
             <img className="w-8 h-8 mr-10" src={images.photo} alt="" />
             <p className="font-medium text-gray-600">Photos</p>
           </div>
+
+          {/* Add Status Update Button */}
+          <div className="flex items-center gap-x-3 w-1/2 justify-center p-2 hover:bg-gray-100 active:bg-gray-100 rounded-xl select-none"
+          onClick={handleShowStatusModal}>
+              <button type="submit" variant="contained" color="primary">
+                    + Status Update
+              </button>
+          </div>
+
         </div>
       </div>
       <CreatePostModal
@@ -45,6 +60,15 @@ const CreatePost = () => {
         image={images.user}
         name={names.user}
       />
+
+      <WorkoutStatusModal
+        showStatusModal={showStatusModal}
+        setshowStatusModal={setshowStatusModal}
+        userId={1}
+        image={images.user}
+        name={names.user}
+      />
+      
     </>
   );
 };
