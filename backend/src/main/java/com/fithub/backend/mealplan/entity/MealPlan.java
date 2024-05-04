@@ -11,9 +11,9 @@ import java.util.List;
 @Getter
 @Setter
 @AllArgsConstructor
-@NoArgsConstructor
+@NoArgsConstructor 
 @Entity
-public class MealPlan {
+public class MealPlan {  
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

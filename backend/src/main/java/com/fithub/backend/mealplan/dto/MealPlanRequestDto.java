@@ -9,15 +9,15 @@ import java.util.List;
 
 @Getter
 @Setter
-@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonIgnoreProperties(ignoreUnknown = true)  
 public class MealPlanRequestDto {
     private Long id;
 
     private String instructions;
     private String recipeName;
 
-    private Long userId;
+    private Long userId;  
 
-    // private List<String> images;
+    // private List<String> images;  
 
 }

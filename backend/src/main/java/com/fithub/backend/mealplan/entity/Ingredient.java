@@ -12,7 +12,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 
-public class Ingredient {
+public class Ingredient {  
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
