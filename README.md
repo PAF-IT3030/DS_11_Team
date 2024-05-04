@@ -5,7 +5,7 @@ Please go under edit and edit this file as needed for your project
 
 # Project Group - DS_Team_11
 
-### Group Leader - IT21160820 - Rupasinghe Y.S (IT21160820)
+### Group Leader - IT21160820 - Rupasinghe Y.S (IT21160820 & YashikaRupasinghe)
 
 ### Member 2 - IT21254970 - Tharaki D.H.D (IT21254970)
 
