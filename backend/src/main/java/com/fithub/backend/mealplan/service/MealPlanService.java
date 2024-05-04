@@ -105,20 +105,6 @@ public class MealPlanService {
 
     private void saveMealPlan(MealPlanRequestDto mealPlanRequestDto, MealPlan mealPlan) {
         mealPlan = mealPlanRepository.save(mealPlan);
-
-        // for (String image : mealPlanRequestDto.getImages()) {
-        // MealPlanImage mealPlanImage = new MealPlanImage();
-        // mealPlanImage.setValue(image);
-        // mealPlanImage.setMealPlan(mealPlan);
-        // mealPlanImageRepository.save(mealPlanImage);
-        // }
-
-        // for (String ingredientRequestDto : mealPlanRequestDto.getIngredients()) {
-        // Ingredient ingredient = new Ingredient();
-        // ingredient.setMealPlan(mealPlan);
-        // ingredient.setName(ingredientRequestDto);
-        // ingredientRepository.save(ingredient);
-        // }
     }
 
     private static MealPlan getMealPlan(MealPlanRequestDto mealPlanRequestDto, Optional<User> userOptional) {
