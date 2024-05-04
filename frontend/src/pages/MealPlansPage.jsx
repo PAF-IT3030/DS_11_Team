@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Button, Grid, Typography } from '@mui/material'
+import { Button, Grid, Typography } from '@mui/material' 
 
-function MealPlansPage() {
-  return (
+function MealPlansPage() { 
+  return ( 
 
    
     <Grid style={{ display: 'flex', flexDirection: 'column', padding: '0 50px', minHeight: 'calc(100vh - 100px)' }}>
