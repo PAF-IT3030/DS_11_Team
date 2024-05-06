@@ -12,7 +12,7 @@ import axios from "axios";
 import "tw-elements-react/dist/css/tw-elements-react.min.css";
 import DragComponent from "./DragComponent";
 
-// CreatePostModal, showModal, setShowModal
+// CreateStatusModal, showStatusModal, setShowStatusModal
 const WorkoutStatusModal = ({ showStatusModal, setShowStatusModal, userId, image, name }) => {
   const [content, setContent] = useState("");
   const [ownerLicense, setOwnerLicense] = useState([]);
