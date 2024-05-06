@@ -5,14 +5,14 @@ import WorkoutStatusModal from "../WorkoutStatus/WorkoutStatusModal";
 
 const CreatePost = () => {
   const [showModal, setShowModal] = useState(false);
-  const [showStatusModal, setshowStatusModal] = useState(false);
+  const [showStatusModal, setShowStatusModal] = useState(false);
 
   const handleShowModal = () => {
     setShowModal(!showModal);
   };
 
   const handleShowStatusModal = () => {
-    setshowStatusModal(!showStatusModal);
+    setShowStatusModal(!showStatusModal);
   };
 
   return (
@@ -63,7 +63,7 @@ const CreatePost = () => {
 
       <WorkoutStatusModal
         showStatusModal={showStatusModal}
-        setshowStatusModal={setshowStatusModal}
+        setShowStatusModal={setShowStatusModal}
         userId={1}
         image={images.user}
         name={names.user}
