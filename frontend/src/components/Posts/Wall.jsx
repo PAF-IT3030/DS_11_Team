@@ -1,6 +1,7 @@
 import React from "react";
 import CreatePost from "./CreatePost";
 import Posts from "./Posts";
+import Statuses from "../WorkoutStatus/Statuses"
 
 const Wall = () => {
   return (
@@ -17,6 +18,7 @@ const Wall = () => {
     >
       <CreatePost />
       <Posts />
+      <Statuses />
     </div>
   );
 };
